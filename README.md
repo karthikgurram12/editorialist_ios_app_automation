@@ -23,7 +23,6 @@ Note: for first time WDA installation only we needed xcodeOrgId, xcodeSigningId,
 	* appium java client 
         * selenium
         * TestNG
-        * Appium
 7. Get data from properties file using config.properties
 8. Added POM Design pattern support for the TestNG Framework
 9. Uploaded the code to git
