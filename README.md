@@ -32,4 +32,5 @@ Note: for first time WDA installation only we needed xcodeOrgId, xcodeSigningId,
 12. Identify elements with AppiumBy in Page Object Model (POM) classes
 
 Pending items:
+
 13. For login and testdata, we can go with yml (Jackson library to parse) or Json(SnakeYaml) or properties file or by using data provider.
