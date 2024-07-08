@@ -1,0 +1,18 @@
+{
+  "test_account1": {
+    "username": "karthik",
+    "password": "password",
+    "test_data": {
+      "data": "one",
+      "data1": "two"
+    }
+  },
+  "test_account2": {
+    "username": "ram",
+    "password": "password",
+    "test_data": {
+      "data": "one",
+      "data1": "two"
+    }
+  }
+}

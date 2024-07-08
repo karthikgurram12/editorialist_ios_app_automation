@@ -4,10 +4,11 @@ import com.editorialist.pages.LoginPage;
 import org.testng.annotations.Test;
 
 public class FirstTest extends BaseTest{
+    private LoginPage loginPage;
 
     @Test
     public void loginTest(){
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.login(config.getProperty("email"), config.getProperty("password"));
+        loginPage=new LoginPage(driver);
+        loginPage.login(userdata.get("username").asText(), userdata.get("password").asText());
     }
 }

@@ -30,6 +30,4 @@ Note: for first time WDA installation only we needed xcodeOrgId, xcodeSigningId,
 10. Added testNG.xml file to run as a suite.
 11. Added Logging statements in BaseTest using slf4j dependency.
 12. Identify elements with AppiumBy in Page Object Model (POM) classes
-
-Pending items:
-13. For login and testdata, we can go with yml (Jackson library to parse) or Json(SnakeYaml) or properties file or by using data provider.
+13. Added Jackson dependency to read test_accounts.json containing account details with it’s test data
