@@ -18,7 +18,8 @@ Framework Setup Steps:
 }
 Note: for first time WDA installation only we needed xcodeOrgId, xcodeSigningId, from second time it's not required
  4. Configure the Maven and java project in IntelliJ
- 5.  Add the dependencies
+ 5.  Added the dependencies
+    
 	* appium java client 
         * selenium
         * TestNG
