@@ -1,7 +1,9 @@
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.example.utils.DriverUtils;
+package com.editorialist.tests;
+
+import com.editorialist.utils.DriverUtils;
 import io.appium.java_client.ios.IOSDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -11,6 +13,7 @@ import java.net.MalformedURLException;
 import java.util.Properties;
 
 public class BaseTest {
+    private static final Logger logger = LoggerFactory.getLogger(BaseTest.class);
 
     IOSDriver driver;
     Properties config;
@@ -21,14 +24,14 @@ public class BaseTest {
         try(InputStream inputStream = getClass().getClassLoader().
                 getResourceAsStream("properties//config.properties")){
             if(inputStream == null){
-                System.out.println("Sorry, unable to find config.properties file");
+                logger.info("Sorry, unable to find config.properties file");
                 return;
             }
             config.load(inputStream);
         }catch (IOException ex){
             ex.printStackTrace();
         }
-        driver=driverUtils.driverCreation();
+        driver=driverUtils.driverCreation(config);
     }
 
     @AfterSuite
@@ -36,6 +39,6 @@ public class BaseTest {
         if(driver!=null) {
             driver.quit();
         }
-        System.out.println("session terminated");
+        logger.info("session terminated");
     }
 }

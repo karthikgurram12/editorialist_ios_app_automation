@@ -26,3 +26,10 @@ Note: for first time WDA installation only we needed xcodeOrgId, xcodeSigningId,
 6. Get data from properties file using config.properties
 7. Added POM Design pattern support for the TestNG Framework
 8. Uploaded the code to git
+9. Updated desired caps as dynamic values coming from config.properties.
+10. Added testNG.xml file to run as a suite.
+11. Added Logging statements in BaseTest using slf4j dependency.
+12. Identify elements with AppiumBy in Page Object Model (POM) classes
+
+Pending items:
+13. For login and testdata, we can go with yml (Jackson library to parse) or Json(SnakeYaml) or properties file or by using data provider.

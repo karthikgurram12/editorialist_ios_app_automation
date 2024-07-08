@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Editorialist">
+    <test name="LoginTests">
+        <classes>
+            <class name="com.editorialist.tests.FirstTest"/>
+        </classes>
+    </test>
+    <!-- Add more tests or classes as needed -->
+</suite>
