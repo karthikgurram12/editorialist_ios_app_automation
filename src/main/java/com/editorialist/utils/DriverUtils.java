@@ -23,7 +23,7 @@ public class DriverUtils {
         URL url=new URL("http://127.0.0.1:4723/");
 
         IOSDriver driver=new IOSDriver(url,cap);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
 }
